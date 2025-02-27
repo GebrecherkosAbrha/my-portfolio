@@ -359,13 +359,79 @@ section h2::after {
 
 /* About Section */
 .about-section {
-    background-color: var(--light-bg);
+    padding: 6rem 0;
+    background: var(--bg-primary);
+}
+
+.about-section .container {
+    max-width: 900px;  /* Slightly narrower for better readability */
+}
+
+.about-section h2 {
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .about-section p {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    hyphens: auto;
+    word-spacing: -0.05em;  /* Slightly tighter word spacing for justified text */
+}
+
+.about-section .languages {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.about-section .languages h3 {
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.about-section .languages ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.about-section .languages li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.about-section .languages li span {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 4rem 0;
+    }
+
+    .about-section p {
+        text-align: left;  /* Switch to left-align on mobile for better readability */
+        font-size: 1rem;
+    }
+
+    .about-section .languages ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Languages Section */
