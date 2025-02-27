@@ -31,7 +31,4 @@ A modern, responsive portfolio website showcasing my professional experience, sk
 3. No build process required - pure HTML, CSS, and JavaScript
 
 ## Deployment
-Hosted on GitHub Pages at [your-username.github.io/my-portfolio]
-
-## License
-MIT License - feel free to use this template for your own portfolio!
+Visit my portfolio at: https://GebrecherkosAbrha.github.io/my-portfolio
