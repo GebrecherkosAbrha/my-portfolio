@@ -1,6 +1,11 @@
 # Personal Portfolio Website
 
+[![Deploy to GitHub Pages](https://github.com/GebrecherkosAbrha/my-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/GebrecherkosAbrha/my-portfolio/actions/workflows/deploy.yml)
+
 A modern, responsive portfolio website showcasing my professional experience, skills, and certifications in software development, cloud computing, and data engineering.
+
+## Live Demo
+🔗 [View Portfolio](https://GebrecherkosAbrha.github.io/my-portfolio)
 
 ## Features
 - Responsive design that works on desktop and mobile
@@ -32,3 +37,13 @@ A modern, responsive portfolio website showcasing my professional experience, sk
 
 ## Deployment
 Visit my portfolio at: https://GebrecherkosAbrha.github.io/my-portfolio
+
+## Security
+This project implements several security best practices:
+- Content Security Policy (CSP)
+- HTTP Strict Transport Security (HSTS)
+- X-Frame-Options and other security headers
+- Regular automated security scans
+- Responsible disclosure policy via security.txt
+
+For security concerns, please see our [security policy](https://github.com/GebrecherkosAbrha/my-portfolio/security/policy).

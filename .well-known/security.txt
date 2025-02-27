@@ -1,0 +1,6 @@
+# Security Policy and Contact Information
+Contact: mailto:your-email@example.com
+Expires: 2026-02-28T00:00:00.000Z
+Preferred-Languages: en
+Policy: https://github.com/GebrecherkosAbrha/my-portfolio/security/policy
+Canonical: https://gebrecherkosabrha.github.io/.well-known/security.txt

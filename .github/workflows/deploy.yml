@@ -5,14 +5,33 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly security scan
 
 permissions:
   contents: read
   pages: write
   id-token: write
+  security-events: write
 
 jobs:
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run CodeQL Analysis
+        uses: github/codeql-action/init@v2
+        with:
+          languages: javascript
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+
   deploy:
+    needs: security
     runs-on: ubuntu-latest
     environment:
       name: github-pages
